@@ -1,0 +1,214 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vive Activo</title>
+    echo "# vive-activo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/iraycruz1964-byte/vive-activo.git
+git push -u origin main
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #000000, #1a0000);
+            color: #f5f5f5;
+        }
+
+        header {
+            background: rgba(0,0,0,0.9);
+            color: #ff1a1a;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 2px solid #ff1a1a;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .contenedor {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .bloque {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .bloque img {
+            width: 45%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(255,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .bloque img:hover {
+            transform: scale(1.05);
+        }
+        .img-pequena {
+         width: 35%;
+        }
+
+        /* CONTENEDOR DE CARDS */
+        .cards {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 55%;
+        }
+
+        .card {
+            width: 100%;
+            background: #111;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(255,0,0,0.2);
+            border: 1px solid #ff1a1a;
+            font-size: 1.1em;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(255,0,0,0.4);
+        }
+
+        .card h2 {
+            color: #ff1a1a;
+        }
+
+        .reverse {
+            flex-direction: row-reverse;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .cta h2 {
+            color: #ff1a1a;
+        }
+
+        .cta button {
+            background: #ff1a1a;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .cta button:hover {
+            background: #cc0000;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            color: #ff1a1a;
+            border-top: 2px solid #ff1a1a;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .bloque {
+                flex-direction: column;
+            }
+
+            .reverse {
+                flex-direction: column;
+            }
+
+            .bloque img, .cards {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>¡Actívate Hoy!</h1>
+    <p>El deporte es la clave para una vida saludable y un mejor físico</p>
+</header>
+
+<section class="contenedor">
+
+    <!-- BLOQUE CON 2 CARDS -->
+    <div class="bloque"> 
+        <img src="img.jpg" alt="Ejercicio">
+
+        <div class="cards">
+            <div class="card">
+                <h2>Historia del Microfutbol</h2>
+                <p>El microfútbol en Colombia es un deporte muy popular que se juega en espacios cerrados con cinco jugadores por equipo. Se ha desarrollado ampliamente gracias a torneos nacionales como la Copa Profesional de Microfútbol y ha logrado reconocimiento internacional, destacándose como una potencia mundial. Su accesibilidad y dinamismo lo han convertido en una parte importante de la cultura deportiva del país.</p>
+            </div>
+
+            <div class="card">
+                <h2>Beneficios para tu salud</h2>
+                <p>El microfútbol aporta varios beneficios para la salud, tanto físicos como mentales:
+
+Mejora la resistencia cardiovascular y la capacidad pulmonar.
+Fortalece músculos y huesos, especialmente en piernas y abdomen.
+Ayuda a quemar calorías y mantener un peso saludable.
+Desarrolla coordinación, agilidad y reflejos.
+Reduce el estrés y la ansiedad gracias a la actividad física.
+Fomenta el trabajo en equipo y la disciplina.
+
+En general, es una forma divertida y efectiva de mantenerse activo y cuidar la salud.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOQUE NORMAL -->
+    <div class="bloque reverse">
+        <img src="img 2.jpg" alt="Fisico">
+        <div class="cards">
+            <div class="card">
+                <h2>Mejora tu físico</h2>
+                <p>El microfútbol es una excelente forma de transformar tu cuerpo de manera integral. Al ser un deporte dinámico y de alta intensidad, ayuda a quemar grasa, tonificar músculos y mejorar la resistencia física. Los constantes movimientos, cambios de ritmo y desplazamientos fortalecen principalmente las piernas, el abdomen y mejoran la coordinación. Además, su práctica regular contribuye a mantener un peso saludable y a desarrollar mayor agilidad y condición física, convirtiéndolo en una opción completa para mejorar tu físico mientras disfrutas del juego.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOQUE NORMAL -->
+    <div class="bloque">
+        <img src="img 3.jpg" alt="Energia">
+        <div class="cards">
+            <div class="card">
+                <h2>Más energía y confianza</h2>
+                <p>Practicar microfútbol de forma regular aumenta tus niveles de energía al mejorar la circulación y la resistencia física. Además, el ejercicio libera endorfinas, lo que ayuda a reducir el estrés y mejorar el estado de ánimo. Con el tiempo, ver avances en tu rendimiento y condición física fortalece tu autoestima, haciéndote sentir más seguro y con mayor confianza tanto dentro como fuera de la cancha.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2>¿Listo para empezar?</h2>
+        <button onclick="alert('¡Empieza hoy! Tu cuerpo te lo agradecerá')">Comenzar</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Vive Activo - Tu salud es tu mejor inversión</p>
+</footer>
+
+</body>
+</html>
